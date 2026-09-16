@@ -1,0 +1,142 @@
+#desc_static {
+    display: flex;
+    width: 100%;
+    height: 250vh;
+    position: relative;
+}
+
+#desc_fixed {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    padding: 0% 5%;
+    align-items: center;
+    gap: 0.3em;
+}
+.desc_logo{
+    transform: translateX(70.5em) translateY(-18.5em);
+    position: absolute;
+    width: 18%;
+    filter: drop-shadow(10px 10px 3px var(--box-shadow));
+    transition: 0.1s;
+}
+.verde {
+    color: var(--verde);
+}
+
+.desc_img_content {
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    gap: 5em;
+    position: fixed;
+    bottom: 15em;
+}
+
+.img_anima {
+    width: 100vmax;
+    height: auto;
+    display: flex;
+    gap: 10em;
+    align-items: center;
+    padding-right: 12em;
+    justify-content: end;
+    transform: translate(-300vh);
+    z-index: 5;
+}
+
+.desc_img {
+    width: 40%;
+    transition: opacity 0.3s;
+    filter: drop-shadow(10px 10px 10px #00000088);
+}
+
+
+.desc_img:nth-child(1) {
+    scale: 1.2;
+}
+.desc_complements_1 {
+    display: flex;
+    width: auto;
+    justify-content: right;
+    height: auto;
+    gap: 0.6em;
+    align-items: end;
+    z-index: 5;
+    transform: translateX(-250vh);
+}
+
+.desc_complements_2 {
+    display: flex;
+    width: auto;
+    justify-content: left;
+    height: auto;
+    gap: 0.6em;
+    z-index: 5;
+    transform: translateX(250vh);
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    width: 22em;
+    height: 23em;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    position: relative;
+    border-radius: 1em;
+    padding: 2em;
+}
+.comple_item_4{
+    transform: translateY(-0.3em);
+}
+
+.item::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: skew(-15deg);
+    box-shadow: 10px 10px 30px #00000063;
+    z-index: -1;
+    background-color: #ffffff;
+}
+
+.left {
+    width: 80%;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    margin-top: 3em;
+}
+
+.comple_img {
+    width: 100%;
+    height: 100%;
+    margin-top: -3em;
+    border-radius: 50% 0%;
+}
+
+.item:nth-child(2) .comple_img {
+    scale: 1.3;
+}
+
+.item:nth-child(4) .tools_img {
+    scale: 0.8;
+}
+
+.desc_complement h3 {
+    font-size: 2em;
+}
+
+.desc_complement P {
+    line-height: 1.5em;
+    text-align: justify;
+}

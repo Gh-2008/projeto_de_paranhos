@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('../styles/global.css');
+@import url('../styles/global.css');
+@import url(error.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    height: auto;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.resposta {
+    background-color: #bad4c1;
+    text-align: center;
+    border-radius: 0.2em;
+}
+
+.resposta_animation {
+    animation: resposta 0.1s linear;
+}
+
+@keyframes resposta {
+    0% {
+        transform: scale(0.9);
+        opacity: 0.7;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.cad_conclu {
+    background-color: #1e5e3a;
+    display: flex;
+
+    transform: translateY(-100vh);
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 96;
+}
+
+.conclu_active {
+    transform: translateY(0);
+}
+
+.home {
+    width: 5em;
+    height: auto;
+    position: absolute;
+    top: 2em;
+    left: 5em;
+    z-index: 99;
+    opacity: 0.7;
+    transition: all 0.3s ease-out;
+}
+
+.home:hover {
+    transform: scale(1.05) translateX(-1.4em);
+}
+
+.home img {
+    width: 3em;
+    height: 3em;
+}
+
+.menu {
+    width: 2em;
+    display: none;
+}
+.agro-grid {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image:
+        linear-gradient(rgba(34, 168, 103, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(34, 168, 103, 0.04) 1px, transparent 1px);
+    background-size: 35px 35px;
+    z-index: 1;
+}
+
+.form_box {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5em;
+}
+
+.logo_loja {
+    width: 19em;
+}
+
+form {
+    width: 20em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+input {
+    width: 100%;
+    height: 3em;
+    background: transparent;
+    border: 0;
+    border: 3px solid rgba(30, 38, 32, 0.69);
+    font-size: 15px;
+    color: #1c3d27;
+    padding: 0.3em 1em;
+    outline: none;
+    border-radius: 4em;
+    transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+select{
+    border: none;
+    outline: none;
+}
+select option:hover{
+    background-color: #1c3d27;
+}
+
+input::placeholder {
+    color: #92a697;
+}
+input:focus~i {
+    color: #34a867;
+}
+
+
+
+.ende_container,
+.pass_container {
+    width: 100%;
+    display: flex;
+    gap: 1em;
+}
+
+.btn {
+    width: 100%;
+    height: 2.3em;
+    border: 3px solid var(--verde);
+    border: none;
+    outline: none;
+    border-radius: 4em;
+    cursor: pointer;
+    font-size: 20px;
+    color: var(--branco);
+    font-weight: 700;
+    letter-spacing: 3px;
+    box-shadow: 0 5px 15px rgba(46, 139, 87, 0.2);
+    background-color: var(--verde);
+    transition: all 0.6s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 40px rgba(46, 139, 86, 0.819);
+}
+
+.register-link {
+    font-size: 13px;
+    text-align: center;
+    margin: 25px 0 0;
+    color: #4f6655;
+}
+
+.register-link p a {
+    color: #1e5e3a;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.8s;
+}
+
+.register-link p a:hover {
+    color: #34a867;
+    text-decoration: underline;
+}
+
+@keyframes registerPulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.03);
+        opacity: 0.7;
+    }
+}

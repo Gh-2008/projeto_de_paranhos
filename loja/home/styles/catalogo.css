@@ -1,0 +1,30 @@
+.prod_catalogo_itens{
+   display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+    place-items: center;
+    padding: 3em 0;
+    margin-bottom: 5em;
+}
+.cat_item {
+    width:auto;
+    height: auto;
+    justify-items: center;
+}
+
+.cat_item_img {
+    width: 14em;
+    padding: 0.2em;
+    border-radius:50%;
+    transition: 0.2s ease-out;
+    box-shadow: 4px 4px 5px var(--box-shadow);
+}
+.cat_item_img:hover{
+    transform: scale(0.9);
+}
+.cat_item_title {
+    font-size: 1.3em;
+    font-weight: 400;
+    color: var(--cinza);
+}
